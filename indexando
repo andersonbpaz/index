@@ -1,0 +1,67 @@
+# vetores
+poisson(1)
+poisson[c(1:10, 15)]
+
+# matrizes
+matrix1[1, ] 
+matrix1[ ,1] 
+matrix1[1,1] 
+
+# data.frames
+iris$Species
+
+iris[ , 5]
+
+iris[1:10, 2:5]
+
+iris[, 'Species']
+
+iris[, 'Species', drop = FALSE]
+
+iris[ , -5]
+
+# listas
+reg_livros$coefficients
+reg_livros$coefficients[1]
+reg_livros[['coefficients']][1]
+reg_livros[[1]][1]
+
+# operadores lógicos
+a <- 5
+b <- 7
+c <- 5
+
+a < b
+a <= b
+a > b
+a >= b
+a == b
+a != b
+
+a %in% c(b, c)
+a == c & a < b
+a != c | a > b
+xor(a != c, a < b)
+!a != c
+any(a != c, a < c, a == c)
+all(a != c, a < c, a == c)
+
+# operadores lógicos na prática
+iris$Sepal.Length <= 0 
+
+iris$Sepal.Length >= 0 & iris$Sepal.Width <= 0.2
+
+which(iris$Sepal.Length <= 5)
+
+match(iris$Species, 'setosa')
+
+# indexando
+lista_livros(3, )
+lista_livros[ ,3]
+lista_livros[3, 3]
+
+lista_livros$livros_romance <= 0 
+
+which(lista_livros$livros_romance <= 5) 
+
+match(data.frame$lista_livros, 'Nárnia')
